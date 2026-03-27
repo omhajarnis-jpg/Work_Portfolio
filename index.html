@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Om Hajarnis — Sports Creator & Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Orbitron:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── CURSOR ── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <div class="nav-logo">OH<span class="accent">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#content">Content</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-noise"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up">Sports Creator &amp; Engineer</p>
+      <h1 class="hero-name reveal-up delay-1">Om<br><span class="outline-text">Hajarnis</span></h1>
+      <p class="hero-tagline reveal-up delay-2">Creating sports content.<br>Building digital solutions.</p>
+      <div class="hero-btns reveal-up delay-3">
+        <a href="#content" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <!-- floating sport badges -->
+    <div class="sport-badge badge-1">⚽</div>
+    <div class="sport-badge badge-2">🏏</div>
+    <div class="sport-badge badge-3">🏎️</div>
+    <div class="sport-badge badge-4">🎾</div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <div class="about-img-wrap">
+          <div class="about-img-placeholder">
+            <div class="img-text">OM</div>
+          </div>
+          <div class="about-badge">
+            <span class="badge-num">7+</span>
+            <span class="badge-label">Years on<br>YouTube</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2 class="section-heading">Passion meets <span class="accent-word">purpose.</span></h2>
+          <p>I've been exploring YouTube since around 2016–17 and have spent the past few years actively building sports content across multiple formats — from deep-dive informational videos to chaotic meme content and everything in between.</p>
+          <p>Alongside content creation, I'm an engineering student capable of building websites, software tools, and digital solutions for creators and organizations who want to grow their digital presence.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-n">6+</span><span class="stat-l">Content Formats</span></div>
+            <div class="stat"><span class="stat-n">4</span><span class="stat-l">Sports Covered</span></div>
+            <div class="stat"><span class="stat-n">∞</span><span class="stat-l">Ideas Brewing</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTENT CATEGORIES ── -->
+  <section id="content" class="section dark-section">
+    <div class="container">
+      <div class="section-label">02 — Content</div>
+      <h2 class="section-heading centered">What I <span class="accent-word">Create</span></h2>
+      <div class="cards-grid">
+        <div class="cat-card" data-tilt>
+          <div class="cat-icon">📊</div>
+          <h3>Sports Storytelling</h3>
+          <p>Deep dives in Legendary Sports Tales &amp; analytical content</p>
+        </div>
+        <div class="cat-card" data-tilt>
+          <div class="cat-icon">🔥</div>
+          <h3>Reactions</h3>
+          <p>Live energy and genuine takes on big sports moments</p>
+        </div>
+        <div class="cat-card" data-tilt>
+          <div class="cat-icon">⭐</div>
+          <h3>Reviews</h3>
+          <p>Honest breakdowns of players, seasons &amp; events</p>
+        </div>
+        <div class="cat-card" data-tilt>
+          <div class="cat-icon">😂</div>
+          <h3>Memes</h3>
+          <p>Viral-worthy sports meme content &amp; edits</p>
+        </div>
+        <div class="cat-card" data-tilt>
+          <div class="cat-icon">🤝</div>
+          <h3>Relatable</h3>
+          <p>Content every sports fan will nod along to</p>
+        </div>
+        <div class="cat-card" data-tilt>
+          <div class="cat-icon">🎬</div>
+          <h3>Personal</h3>
+          <p>Creative &amp; expressive content beyond the game</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <!-- ── FEATURED WORK ── -->
+<section id="featured" class="section">
+  <div class="container">
+
+    <div class="section-label">
+      03 — Featured Work
+    </div>
+
+    <h2 class="section-heading">
+      Selected <span class="accent-word">Works</span>
+    </h2>
+
+    <div class="works-grid">
+
+      <!-- CARD 1 -->
+      <a href="https://youtu.be/onxGPxFSl-w"
+         class="work-card"
+         target="_blank"
+         rel="noopener">
+
+        <div class="work-thumb yt">
+          <div class="play-icon">▶</div>
+          <div class="work-overlay">
+            <span class="work-platform youtube">
+              YouTube
+            </span>
+          </div>
+        </div>
+
+        <div class="work-info">
+          <h4>Tales of Comeback</h4>
+          <p>YouTube comeback story video</p>
+        </div>
+
+      </a>
+
+
+      <!-- CARD 2 -->
+      <a href="https://www.instagram.com/reel/DUqP-rKkjXD"
+         class="work-card"
+         target="_blank"
+         rel="noopener">
+
+        <div class="work-thumb ig">
+          <div class="play-icon">▶</div>
+          <div class="work-overlay">
+            <span class="work-platform instagram">
+              Instagram
+            </span>
+          </div>
+        </div>
+
+        <div class="work-info">
+          <h4>Highest Viewed Reel</h4>
+          <p>Instagram sports meme edit</p>
+        </div>
+
+      </a>
+
+
+      <!-- CARD 3 -->
+      <a href="https://youtube.com/@omsportscorner"
+         class="work-card"
+         target="_blank"
+         rel="noopener">
+
+        <div class="work-thumb react">
+          <div class="play-icon">▶</div>
+          <div class="work-overlay">
+            <span class="work-platform youtube">
+              YouTube
+            </span>
+          </div>
+        </div>
+
+        <div class="work-info">
+          <h4>More Videos</h4>
+          <p>Explore my YouTube channel</p>
+        </div>
+
+      </a>
+
+
+      <!-- CARD 4 -->
+      <a href="https://youtube.com/@omsportscorner"
+         class="work-card"
+         target="_blank"
+         rel="noopener">
+
+        <div class="work-thumb meme">
+          <div class="play-icon">▶</div>
+          <div class="work-overlay">
+            <span class="work-platform shorts">
+              Shorts
+            </span>
+          </div>
+        </div>
+
+        <div class="work-info">
+          <h4>YouTube Shorts</h4>
+          <p>Short-form sports content</p>
+        </div>
+
+      </a>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ── SPORTS IDENTITY ── -->
+  <section id="sports" class="section dark-section sports-section">
+    <div class="container">
+      <div class="section-label">04 — Sports DNA</div>
+      <h2 class="section-heading centered">Fuelled by <span class="accent-word">Sport</span></h2>
+      <div class="sports-grid">
+        <div class="sport-item">
+          <div class="sport-icon-wrap">⚽</div>
+          <span>Football</span>
+        </div>
+        <div class="sport-item">
+          <div class="sport-icon-wrap">🏏</div>
+          <span>Cricket</span>
+        </div>
+        <div class="sport-item featured-sport">
+          <div class="sport-icon-wrap">🎾</div>
+          <span>Tennis</span>
+          <div class="sport-tag">State Level</div>
+        </div>
+        <div class="sport-item">
+          <div class="sport-icon-wrap">🏎️</div>
+          <span>Formula 1</span>
+        </div>
+      </div>
+      <p class="sports-note">State-level tennis player — sport isn't just content, it's identity.</p>
+    </div>
+  </section>
+
+  <!-- ── SERVICES ── -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-label">05 — Services</div>
+      <h2 class="section-heading">What I Can <span class="accent-word">Build</span></h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-num">01</div>
+          <h3>Content Creation</h3>
+          <p>Sports content across formats — long form, short form, series.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">02</div>
+          <h3>Video Editing</h3>
+          <p>Clean, punchy edits with motion graphics &amp; sound design.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <h3>Creative Ideas</h3>
+          <p>Concept development, scripting &amp; content strategy.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">04</div>
+          <h3>Website Dev</h3>
+          <p>Fast, modern websites for creators &amp; organizations.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">05</div>
+          <h3>Software Dev</h3>
+          <p>Custom tools &amp; automation built for digital teams.</p>
+        </div>
+        <div class="service-card highlight-card">
+          <div class="service-num">06</div>
+          <h3>AI Video Ads</h3>
+          <p>AI-powered promotional video ads that convert.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-num">07</div>
+          <h3>Digital Support</h3>
+          <p>End-to-end support for growing your digital presence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PLATFORMS ── -->
+  <section id="platforms" class="section dark-section">
+    <div class="container">
+      <div class="section-label">06 — Platforms</div>
+      <h2 class="section-heading centered">Find Me <span class="accent-word">Here</span></h2>
+      <div class="platforms-row">
+        <a href="https://youtube.com/@omsportscorner" class="platform-link" target="_blank" rel="noopener"></a>
+          <div class="platform-icon yt-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </div>
+          <span>YouTube</span>
+        </a>
+        <a href="https://www.instagram.com/ombappe24" class="platform-link" target="_blank" rel="noopener"></a>
+          <div class="platform-icon ig-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+          <span>Instagram</span>
+        </a>
+       <a href="https://youtube.com/@omsportscorner" class="platform-link" target="_blank" rel="noopener"></a>
+          <div class="platform-icon shorts-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 14.65v-5.3L15 12zm2.515-12.63C8.374 1.755 4.14 5.14 3.07 9.658c-.75 3.17.196 6.445 2.378 8.755l.02.02c.09.097.183.192.28.286.186.183.376.358.574.524l.013.01c.162.134.33.261.503.383l.026.018c.142.1.287.196.436.287l.035.022c.162.098.328.19.498.276l.043.022a7.72 7.72 0 0 0 .54.252 7.53 7.53 0 0 0 .554.21 7.93 7.93 0 0 0 .565.17 7.82 7.82 0 0 0 .576.135 8.3 8.3 0 0 0 .586.1 8.16 8.16 0 0 0 .594.062 8.14 8.14 0 0 0 .6.027 8.26 8.26 0 0 0 .604-.006 8.17 8.17 0 0 0 .6-.037 8.3 8.3 0 0 0 .594-.066 8.13 8.13 0 0 0 .584-.097 8.15 8.15 0 0 0 .574-.127 8.02 8.02 0 0 0 .56-.155 8.14 8.14 0 0 0 .547-.184 7.93 7.93 0 0 0 .532-.21c.176-.076.348-.158.517-.246l.05-.026a7.77 7.77 0 0 0 .5-.282l.035-.022c.148-.094.293-.192.434-.296l.024-.018a7.77 7.77 0 0 0 .497-.387 7.78 7.78 0 0 0 .463-.42 7.49 7.49 0 0 0 .43-.454l.02-.024a7.83 7.83 0 0 0 .396-.487l.018-.024a7.8 7.8 0 0 0 .36-.52l.016-.026a7.78 7.78 0 0 0 .325-.55l.012-.024a7.75 7.75 0 0 0 .29-.58l.01-.024a7.79 7.79 0 0 0 .254-.607l.008-.023a7.8 7.8 0 0 0 .218-.635l.007-.022A7.8 7.8 0 0 0 21 12a9 9 0 0 0-8.485-8.98z"/></svg>
+          </div>
+          <span>YT Shorts</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  
+<section id="contact" class="section contact-section">
+
+  <canvas id="contactCanvas"></canvas>
+
+  <div class="container contact-inner">
+
+    <div class="section-label">
+      07 — Contact
+    </div>
+
+    <h2 class="section-heading">
+      Let's <span class="accent-word">Connect</span>
+    </h2>
+
+    <p class="contact-sub">
+      Open to collaborations, creative projects, and digital builds.
+    </p>
+
+
+    <!-- CONTACT LINKS -->
+    <div class="contact-links">
+
+      <!-- EMAIL -->
+      <a href="mailto:om.hajarnis@gmail.com"
+         class="contact-item">
+
+        <div class="contact-icon">
+          ✉
+        </div>
+
+        <div>
+          <span class="contact-label">
+            Email
+          </span>
+
+          <span class="contact-val">
+            om.hajarnis@gmail.com
+          </span>
+        </div>
+
+      </a>
+
+
+
+      <!-- INSTAGRAM -->
+      <a href="https://www.instagram.com/ombappe24"
+         class="contact-item"
+         target="_blank"
+         rel="noopener">
+
+        <div class="contact-icon">
+          📸
+        </div>
+
+        <div>
+          <span class="contact-label">
+            Instagram
+          </span>
+
+          <span class="contact-val">
+            @ombappe24
+          </span>
+        </div>
+
+      </a>
+
+
+
+      <!-- YOUTUBE -->
+      <a href="https://youtube.com/@omsportscorner"
+         class="contact-item"
+         target="_blank"
+         rel="noopener">
+
+        <div class="contact-icon">
+          ▶
+        </div>
+
+        <div>
+          <span class="contact-label">
+            YouTube
+          </span>
+
+          <span class="contact-val">
+            Om Sports Corner
+          </span>
+        </div>
+
+      </a>
+
+    </div>
+
+
+    <!-- BUTTON -->
+    <a href="mailto:om.hajarnis@gmail.com"
+       class="btn btn-primary btn-large">
+
+      GET IN TOUCH
+
+    </a>
+
+  </div>
+
+</section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>© 2025 Om Hajarnis — Built with ⚡ and passion for sport.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
